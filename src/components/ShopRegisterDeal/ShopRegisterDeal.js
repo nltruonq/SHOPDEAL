@@ -66,11 +66,11 @@ function ShopRegisterDeal() {
             toast.error("Vui lòng nhập số lượng!");
             return;
         }
-        if (data.price < 50000 && data.bank) {
+        if (parseInt(data.price) < 50000 && data.bank) {
             toast.error("Thanh toán ngân hàng khi số tiền hoàn lại > 50000");
             return;
         }
-        if (data.price < data.refund) {
+        if (parseInt(data.price) < parseInt(data.refund)) {
             toast.error("Số tiền hoàn lại không được quá 100%");
             return;
         }
@@ -110,7 +110,7 @@ function ShopRegisterDeal() {
             slot: data.slot,
             note: data.note,
             category: selectRef.current.value,
-        }
+        };
         setInfo(infoData);
         setSuccess(true);
         reset();
