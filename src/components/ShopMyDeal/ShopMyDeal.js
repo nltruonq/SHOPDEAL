@@ -11,7 +11,7 @@ import { onAuthStateChanged } from "firebase/auth";
 
 const cx = classNames.bind(styles);
 
-const url = "https://nghiendeal.vn/product/";
+const url = "http://localhost:3000/product/";
 
 function ShopMyDeal() {
     const [deals, setDeals] = useState([]);
@@ -61,7 +61,7 @@ function ShopMyDeal() {
                                     return (
                                         <tr key={i}>
                                             <td>{e?.id}</td>
-                                            <td style={{maxWidth: 300}}>{e?.name}</td>
+                                            <td style={{ maxWidth: 300 }}>{e?.name}</td>
                                             <td>
                                                 {e?.bought}/{e?.slot}
                                             </td>
@@ -72,7 +72,9 @@ function ShopMyDeal() {
                                                 {e?.bank && "Ngân hàng"} {e?.bank && e?.momo && " & "}{" "}
                                                 {e?.momo && "Momo"}
                                             </td>
-                                            <td><a href={url + e?.id}>{url + e?.id}</a></td>
+                                            <td>
+                                                <a href={url + e?.id}>{url + e?.id}</a>
+                                            </td>
                                         </tr>
                                     );
                                 })}

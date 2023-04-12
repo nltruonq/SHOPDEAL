@@ -82,7 +82,7 @@ function InformationDeal({ info }) {
                                     </button>
                                 </div>
                                 <div className={cx("link")}>
-                                    Link deal: <span className="spancpy">https://nghiendeal.vn/product/{info?.id}</span>
+                                    Link deal: <span className="spancpy">http://localhost:3000/product/{info?.id}</span>
                                     <div className={cx("btn")}>
                                         <button className={cx("btn-cpy")} onClick={selectAndCopy2}>
                                             {isCopy2 ? "Đã copy" : "Copy"}

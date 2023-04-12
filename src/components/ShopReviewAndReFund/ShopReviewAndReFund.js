@@ -11,7 +11,7 @@ import { onAuthStateChanged } from "firebase/auth";
 
 const cx = classNames.bind(styles);
 
-const url = "https://nghiendeal.vn/product/";
+const url = "http://localhost:3000/product/";
 
 function ShopReviewAndReFund() {
     const [orders, setOrders] = useState([]);
