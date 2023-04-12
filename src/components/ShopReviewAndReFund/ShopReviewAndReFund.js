@@ -11,7 +11,7 @@ import { onAuthStateChanged } from "firebase/auth";
 
 const cx = classNames.bind(styles);
 
-const url = "http://localhost:3000/product/";
+const url = "https://shopdeal.vercel.app//product/";
 
 function ShopReviewAndReFund() {
     const [orders, setOrders] = useState([]);
