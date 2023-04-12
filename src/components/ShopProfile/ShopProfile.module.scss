@@ -1,0 +1,75 @@
+.title {
+    font-size: 32px;
+    color: #222;
+    font-weight: 700;
+    margin: 40px 0px;
+}
+
+.wrapper {
+    border: 2px solid rgb(108, 166, 247);
+    padding-bottom: 20px;
+
+    .heading {
+        margin-top: -2px;
+        margin-left: -2px;
+        margin-right: -2px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        color: white;
+        height: 40px;
+        background-color: rgb(108, 166, 247);
+    }
+}
+
+.input {
+    padding: 0px 10px;
+    width: 240px;
+    outline: none;
+}
+
+.input[type="file"] {
+    padding-left: 0;
+}
+
+.img-fb {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 120px;
+        height: 100px;
+        object-position: top;
+        object-fit: cover;
+    }
+}
+
+.btn-save {
+    border: none;
+    background-color: transparent;
+    padding: 6px 40px;
+    background-color: rgb(63, 141, 250);
+    border-radius: 4px;
+    color: white;
+    transition: opacity 200ms ease-in;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+.bg-input {
+    background-color: #ddd;
+}
+
+.img-preview {
+    width: 200px;
+    max-height: 300px;
+    object-fit: contain;
+    object-position: top;
+}
+
+.link-fb {
+    color: #1c7cf9;
+}

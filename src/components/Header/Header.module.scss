@@ -1,0 +1,67 @@
+.wrapper {
+    background-color: #f8f8f8;
+    height: 60px;
+}
+
+.title {
+    color: #999999;
+    font-size: 14px;
+    padding-right: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    flex-shrink: 0;
+    padding: 0 10px;
+
+    &:hover {
+        color: #E4604A;
+    }
+}
+
+.user {
+    position: relative;
+
+    &:hover::after {
+        position: absolute;
+        content: "Đăng xuất";
+        font-size: 16px;
+        color: black;
+        background-color: #fff;
+        width: 100px;
+        height: 100%;
+        bottom: -100%;
+        left: 0;
+    }
+}
+
+.logo {
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px)  {
+    .wrapper {
+        background-color: #fff;
+        margin-bottom: -40px;
+    }
+
+    .wrapper-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-header {
+        height: 0 !important;
+        display: none !important;
+    }
+}

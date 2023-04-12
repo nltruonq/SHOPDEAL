@@ -1,0 +1,52 @@
+.wrapper {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+        .img > img {
+            transform: scale(1.1);
+        }
+    }
+
+    .img {
+        overflow: hidden;
+        height: 250px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            transition: transform 200ms ease-in;
+        }
+    }
+}
+
+.description {
+    padding: 16px;
+
+    .title {
+        height: 46px;
+        // max-width: 200px;
+        color: #444;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .price {
+        margin-top: 6px;
+        color: #DC3545;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .deal {
+        color: #DC3545;
+        font-size: 14px;
+    }
+}

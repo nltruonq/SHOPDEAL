@@ -1,0 +1,19 @@
+.wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.wrapper-item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #777;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    display: none;
+    
+    background: #fc3f00;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+
+    position: fixed;
+    z-index: 2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: opacity 200ms ease-in;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
